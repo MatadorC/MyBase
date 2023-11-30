@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion project.compileSdkVersion as int
+
+    defaultConfig {
+        minSdkVersion project.minSdkVersion as int
+        targetSdkVersion project.targetSdkVersion as int
+        versionCode project.versionCode as int
+        versionName project.versionName
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+    sourceSets {
+        main{
+            res.srcDirs = [
+                    'src/main/res',
+                    'src/main/res-pickerview'
+            ]
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    api "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
+//    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+//    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.1"
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.1"
+    api 'androidx.constraintlayout:constraintlayout:2.0.1'
+    api 'androidx.core:core-ktx:1.3.1'
+    api 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.google.android.material:material:1.2.1'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    api 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // eventbus混淆
+    api 'org.greenrobot:eventbus:3.1.1'
+    // 初始化沉浸式
+    api 'com.gyf.immersionbar:immersionbar:3.0.0'
+    // fragment快速实现（可选）
+    api 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+    // kotlin扩展（可选）
+    api 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+    /**
+     *   魔法切换卡
+     */
+    api 'com.github.hackware1993:MagicIndicator:1.5.0'
+
+    api "org.jetbrains.anko:anko:0.10.8"
+    // OKGO https://github.com/jeasonlzy/okhttp-OkGo
+//    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.readystatesoftware.chuck:library:1.0.4'
+
+    api  'io.github.scwang90:refresh-layout-kernel:2.0.5'      //核心必须依赖
+    api  'io.github.scwang90:refresh-header-classics:2.0.5'    //经典刷新头
+    api  'io.github.scwang90:refresh-footer-classics:2.0.5'    //经典加载
+    // RecyclerAdapter
+    api 'com.github.CymChad:BaseRecyclerViewAdapterHelper:3.0.4'
+    api 'pub.devrel:easypermissions:2.0.1'
+
+    api 'com.github.bumptech.glide:glide:4.11.0'
+    /**
+     *   日志打印
+     */
+    api 'com.orhanobut:logger:2.2.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+
+    implementation 'com.contrarywind:wheelview:4.1.0'
+
+    api("io.github.zicheng1992:cxhttp:1.1.2")
+    //默认网络请求库Okhttp3Call，如果使用其它网络库可去掉
+    api("com.squareup.okhttp3:okhttp:4.11.0")//最新版本不兼容Android4.4
+    api("com.squareup.okhttp3:logging-interceptor:4.11.0")
+    //可选JacksonConverter()
+    api("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+    //可选GsonConverter()
+//    api("com.google.code.gson:gson:2.10.1")
+
+    //Android官方流式布局
+    api 'com.google.android.flexbox:flexbox:3.0.0'
+}

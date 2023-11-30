@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--红底 点击时水波纹颜色-->
+    <color name="color_dd4646">#dd4646</color>
+    <color name="colorPress_dd4646">#dd4646</color>
+
+    <color name="transparent">#0000</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_7fffffff">#9fffffff</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_C385FC">#C385FC</color>
+    <color name="color_D9D9D9">#D9D9D9</color>
+
+    <color name="colorPrimary">#357af6</color>
+    <color name="colorPrimaryDark">#3846ce</color>
+    <color name="colorAccent">#357af6</color>
+
+    <color name="color_2980E5">#2980E5</color>
+    <color name="color_456DF3">#456DF3</color>
+    <color name="color_707070">#707070</color>
+    <color name="color_FFEDD7">#FFEDD7</color>
+
+
+    <!--text color-->
+    <color name="text_primary">#333333</color>
+
+    <color name="text_tertiary">#999999</color>
+    <color name="text_quaternary">#CBCBCB</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_B66400">#B66400</color>
+    <color name="color_0749A4">#0749A4</color>
+    <color name="color_DBE9FD">#DBE9FD</color>
+    <color name="color_F0F2F5">#F0F2F5</color>
+
+    <color name="text_light">#FAFAFA</color>
+    <color name="bgGray">#E6E6E6</color>
+    <color name="colorBlue">#176afd</color>
+
+    <color name="lineColor">#EEEEEE</color>
+    <color name="lineColor2">#dcdcdc</color>
+    <color name="dashLineColor">#d2d2d2</color>
+
+
+    <color name="colorGreen">#00b099</color>
+    <color name="colorGreenLight">#01ffb9</color>
+    <color name="colorVioletDark">#0b0723</color>
+    <color name="colorViolet">#1b1b57</color>
+    <color name="colorViolet2">#000033</color>
+    <color name="colorPink">#f36e9e</color>
+    <color name="colorPinkDark">#ec4974</color>
+    <color name="colorBlueLight">#52a1ff</color>
+    <color name="colorOrange">#ff5a3c</color>
+
+    <color name="colorYellow">#f99e42</color>
+    <color name="colorYellow2">#fabc00</color>
+    <color name="colorYellowLight">#ffcb00</color>
+    <color name="colorYellowLight25">#40ffcb00</color>
+    <color name="colorYellowLight2">#ffda00</color>
+
+    <color name="colorGrayBlue">#111e30</color>
+    <color name="color_111111">#111111</color>
+    <color name="color_B8B8B8">#B8B8B8</color>
+    <color name="colorGrayBlueLight">#3e6079</color>
+    <color name="colorGrayBlueLight2">#5471b3</color>
+
+    <color name="colorRed">#ec1c23</color>
+    <color name="color_ff5151">#ff5151</color>
+    <color name="colorGrayVioletDark">#1a1124</color>
+    <color name="colorGrayViolet">#2e1932</color>
+    <color name="colorGrayVioletLight">#72687c</color>
+
+    <color name="colorGrayRed">#330f13</color>
+    <color name="colorWhite50">#80ffffff</color>
+    <color name="colorFFFFFF90">#E6ffffff</color>
+    <color name="colorFFFFFF40">#66ffffff</color>
+    <color name="colorWhite60">#99ffffff</color>
+    <color name="colorBlack60">#99000000</color>
+
+
+    <color name="color_303030">#303030</color>
+    <color name="color_262626">#262626</color>
+
+    <color name="colorBrightViolet">#9e6dff</color>
+    <color name="colorBrightVioletBlue">#608ffd</color>
+
+    <color name="colorHealthTestBg">#a8c3f8</color>
+    <color name="colorHealthTestToolbar">#7aa6f7</color>
+    <color name="colorHealthTestStep">#d2e1fe</color>
+    <color name="colorHealthTestOptionBg">#f5f8ff</color>
+
+    <color name="colorff99cc00">#ff99cc00</color>
+    <color name="colorff00ddff">#ff00ddff</color>
+
+    <!--白底 点击时水波纹颜色-->
+    <color name="colorRipple">#e0e0e0</color>
+
+    <color name="gray">#c5c5c5</color>
+    <color name="color_F6F6F6">#F6F6F6</color>
+    <color name="color_FEFEFE">#FEFEFE</color>
+    <color name="color_EEEEEE">#EEEEEE</color>
+    <color name="color_ff999999">#ff999999</color>
+    <color name="color_9DAFC7">#9DAFC7</color>
+
+    <color name="color_3CE8FF">#3CE8FF</color>
+    <color name="color_858597">#858597</color>
+
+    <color name="color_2FCCE1">#2FCCE1</color>
+    <color name="color_76CC4C">#76CC4C</color>
+    <color name="color_F9AC44">#F9AC44</color>
+    <color name="color_FC6173">#FC6173</color>
+    <color name="color_item">#8592A6</color>
+    <color name="color_D7DBE8">#D7DBE8</color>
+    <color name="color_F1F1F1">#F1F1F1</color>
+    <color name="color_004098">#004098</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_F6F6F7">#F6F6F7</color>
+    <color name="color_EFF3F4">#EFF3F4</color>
+    <color name="color_C0C0C0">#C0C0C0</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_DCDCDC">#DCDCDC</color>
+    <color name="color_F8FAFA">#F8FAFA</color>
+    <color name="color_EBEBEB">#EBEBEB</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
+    <color name="color_2F2F2F">#2F2F2F</color>
+    <color name="color_E0E0E0">#E0E0E0</color>
+    <color name="color_ECECEC">#ECECEC</color>
+    <color name="color_DC3848">#DC3848</color>
+    <color name="color_F0F0F0">#F0F0F0</color>
+    <color name="color_D2D2D2">#D2D2D2</color>
+    <color name="color_F9F9F9">#F9F9F9</color>
+    <color name="color_B9B9B9">#B9B9B9</color>
+    <color name="color_EF737F">#EF737F</color>
+    <color name="color_60BEE7">#60BEE7</color>
+    <color name="color_7CD685">#7CD685</color>
+    <color name="color_FFB053">#FFB053</color>
+    <color name="color_F9E63E">#F9E63E</color>
+    <color name="color_A4DCF4">#A4DCF4</color>
+    <color name="color_60BEE6">#60BEE6</color>
+    <color name="color_38A0CD">#38A0CD</color>
+    <color name="color_E1DCDC">#E1DCDC</color>
+    <color name="divider_normal">#ECEDED</color>
+    <color name="divider_C6C6C6">#C6C6C6</color>
+    <color name="color_AFAFAF">#AFAFAF</color>
+    <color name="color_090712">#090712</color>
+    <color name="color_121124">#121124</color>
+    <color name="color_FFFDFD">#FFFDFD</color>
+</resources>
