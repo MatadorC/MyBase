@@ -1,11 +1,16 @@
 package com.gov.mybase.utils;
 
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.text.TextUtils;
+
+import androidx.annotation.RequiresApi;
 
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
@@ -2459,5 +2464,97 @@ public final class TimeUtils {
 
     private static long millis2Days(long millis, TimeZone timeZone) {
         return (((long) timeZone.getOffset(millis)) + millis) / 86400000;
+    }
+
+    /**
+     * 获取当前 周 的开始和结束日前
+     *
+     * @param time 2023-12-07
+     * @return
+     */
+    @RequiresApi(api = Build.VERSION_CODES.O)
+    public static String getWeekSE(String time) {
+        LocalDate currentDate = LocalDate.parse(time);
+        LocalDate startOfWeek = currentDate.with(DayOfWeek.MONDAY);
+        LocalDate endOfWeek = currentDate.with(DayOfWeek.SUNDAY);
+
+        System.out.println("当前周的开始日期：" + startOfWeek);
+        System.out.println("当前周的结束日期：" + endOfWeek);
+        return startOfWeek + "#" + endOfWeek;
+    }
+
+    /**
+     * 根据提供的年月日获取该月份的第一天
+     *
+     * * @param time
+     * @return
+     * @Description: (这里用一句话描述这个方法的作用)
+     * @Author: gyz
+     * @Since: 2017-1-9
+     */
+    public static String getSupportBeginDayofMonth(String time) throws ParseException {
+        Date date = DateUtils.parseDate(time, "yyyy-MM-dd");
+        Calendar startDate = Calendar.getInstance();
+        startDate.setTime(date);
+        startDate.set(Calendar.DAY_OF_MONTH, 1);
+        startDate.set(Calendar.HOUR_OF_DAY, 0);
+        startDate.set(Calendar.MINUTE, 0);
+        startDate.set(Calendar.SECOND, 0);
+        startDate.set(Calendar.MILLISECOND, 0);
+        Date firstDate = startDate.getTime();
+
+        return formatDate2(firstDate);
+    }
+
+    /**
+     * 根据提供的年月获取该月份的最后一天
+     *
+     * @param time
+     * @return
+     * @Description: (这里用一句话描述这个方法的作用)
+     * @Author: gyz
+     * @Since: 2017-1-9
+     */
+    public static String getSupportEndDayofMonth(String time) throws ParseException {
+        Date date = DateUtils.parseDate(time, "yyyy-MM-dd");
+        Calendar startDate = Calendar.getInstance();
+        startDate.setTime(date);
+        startDate.set(Calendar.DAY_OF_MONTH, startDate.getActualMaximum(Calendar.DAY_OF_MONTH));
+        startDate.set(Calendar.HOUR_OF_DAY, 23);
+        startDate.set(Calendar.MINUTE, 59);
+        startDate.set(Calendar.SECOND, 59);
+        startDate.set(Calendar.MILLISECOND, 999);
+        Date firstDate = startDate.getTime();
+        return formatDate2(firstDate);
+    }
+
+    /**
+     * 当天的开始时间
+     *
+     * @return
+     */
+    public static long startOfTodDay() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, 0);
+        calendar.set(Calendar.MINUTE, 0);
+        calendar.set(Calendar.SECOND, 0);
+        calendar.set(Calendar.MILLISECOND, 0);
+        Date date = calendar.getTime();
+        return date.getTime();
+    }
+
+    /**
+     * 当天的结束时间
+     *
+     * @return
+     */
+    public static long endOfTodDay() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.HOUR_OF_DAY, 23);
+        calendar.set(Calendar.MINUTE, 59);
+        calendar.set(Calendar.SECOND, 59);
+        calendar.set(Calendar.MILLISECOND, 999);
+        Date date = calendar.getTime();
+        return date.getTime();
     }
 }
