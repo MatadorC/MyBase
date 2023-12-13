@@ -17,6 +17,6 @@ dependencyResolutionManagement {
 ### Step 2. Add the dependency
 ```
 dependencies {
-    implementation 'com.github.MatadorC:MyBase:Tag'
+    implementation 'com.github.MatadorC:MyBase:1.0.1'
 }
 ```
