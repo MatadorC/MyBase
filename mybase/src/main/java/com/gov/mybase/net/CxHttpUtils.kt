@@ -2,11 +2,9 @@ package com.gov.mybase.net
 
 import com.gov.mybase.utils.AppUtils
 import com.gov.mybase.utils.SPUtils
-import com.zicheng.net.cxhttp.CxHttpHelper
-import com.zicheng.net.cxhttp.call.Okhttp3Call
+import cxhttp.CxHttpHelper
+import cxhttp.call.Okhttp3Call
 import kotlinx.coroutines.MainScope
-import okhttp3.OkHttpClient
-import okhttp3.Protocol
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.*
 import java.util.concurrent.TimeUnit
@@ -43,7 +41,6 @@ class CxHttpUtils {
             CxHttpHelper.hookResponse { response ->
                 //此处可以预处理请求结果，例如token失效自动刷新并重试功能、制作假数据测试等等
                 response.request
-                response.setReRequest(false)//设置是否重新请求，默认false
                 response
             }
         }

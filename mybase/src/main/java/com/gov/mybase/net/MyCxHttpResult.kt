@@ -1,5 +1,7 @@
 package com.gov.mybase.net
 
+import cxhttp.response.CxHttpResult
+
 /**
  * ===================================
  * @PackageName ：com.gov.mybase.net
@@ -9,7 +11,6 @@ package com.gov.mybase.net
  * @Version ：1.0
  * ===================================
  */
-import com.zicheng.net.cxhttp.response.CxHttpResult
 
 data class MyCxHttpResult<T>(val code: Int,
                            val message: String?,
