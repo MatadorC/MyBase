@@ -243,6 +243,19 @@ public final class TimeUtils {
      * @param time 时间字符串
      * @return 毫秒时间戳
      */
+    public static long string2MillisYMD(final String time) {
+        return string2Millis(time, getDefaultSimDataFormat3());
+    }
+
+    /**
+     * 将时间字符串转为时间戳
+     * <p>
+     * time 格式为 yyyy-MM-dd HH:mm:ss
+     * </p>
+     *
+     * @param time 时间字符串
+     * @return 毫秒时间戳
+     */
     public static long string2Millis(final String time) {
         return string2Millis(time, getDefaultSimDataFormat());
     }
@@ -2209,6 +2222,10 @@ public final class TimeUtils {
 
     private static DateFormat getDefaultSimDataFormat2() {
         return getSingleDefSimDataFormat("yyyy-MM-dd HH:mm:ss");
+    }
+
+    private static DateFormat getDefaultSimDataFormat3() {
+        return getSingleDefSimDataFormat("yyyy-MM-dd");
     }
 
     private static DateFormat getDefaultSimDataFormat(String pattern) {
