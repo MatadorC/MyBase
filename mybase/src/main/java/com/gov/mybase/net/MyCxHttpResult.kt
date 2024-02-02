@@ -1,6 +1,7 @@
 package com.gov.mybase.net
 
-import cxhttp.response.CxHttpResult
+import com.zicheng.net.cxhttp.response.CxHttpResult
+
 
 /**
  * ===================================
