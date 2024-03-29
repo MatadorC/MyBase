@@ -1,9 +1,9 @@
 package com.gov.mybase.net
 
-import com.zicheng.net.cxhttp.call.CxHttpCall
-import com.zicheng.net.cxhttp.call.Okhttp3Call
-import com.zicheng.net.cxhttp.request.Request
-import com.zicheng.net.cxhttp.response.Response
+import cxhttp.call.CxHttpCall
+import cxhttp.call.Okhttp3Call
+import cxhttp.request.Request
+import cxhttp.response.Response
 import okhttp3.logging.HttpLoggingInterceptor
 import java.util.concurrent.TimeUnit
 
