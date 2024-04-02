@@ -171,6 +171,16 @@ public abstract class BaseActivity<V, T extends BasePresenter<V>> extends AppCom
         }
     }
 
+    public void setLoadingDialogText2(String text){
+        try {
+            if (loadingDialog != null) {
+                loadingDialog.setDialogText2(text);
+            }
+        } catch (Exception e) {
+            LogUtils.e("setLoadingDialogText error : " + e);
+        }
+    }
+
     protected void gone(final View... views) {
         if (views != null && views.length > 0) {
             for (View view : views) {

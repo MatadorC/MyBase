@@ -260,6 +260,16 @@ public abstract class BaseFragment<V, T extends BasePresenter<V>> extends Simple
         }
     }
 
+    public void setLoadingDialogText2(String text){
+        try {
+            if (loadingDialog != null) {
+                loadingDialog.setDialogText2(text);
+            }
+        } catch (Exception e) {
+            LogUtils.e("setLoadingDialogText error : " + e);
+        }
+    }
+
     public void stopLodingDialog() {
         try {
             if (loadingDialog != null) {
