@@ -67,4 +67,8 @@ public class LoadingDialog {
         tv_dialog_loading_data.setText(text);
         pbar.setVisibility(View.GONE);
     }
+
+    public void setDialogText2(String text){
+        tv_dialog_loading_data.setText(text);
+    }
 }
