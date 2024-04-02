@@ -42,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="17dp"
-            android:text="@string/loadingtext"
             android:textSize="14sp" />
 
     </LinearLayout>
