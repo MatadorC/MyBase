@@ -42,7 +42,7 @@ public class BirthdayToAgeUtil {
         age = yearMinus;// 先大致赋值
         if (yearMinus <= 0) {
             age = 0;
-            ageStr = String.valueOf(age) + "周岁";
+            ageStr = String.valueOf(age) + "岁";
             return ageStr;
         }
         if (monthMinus < 0) {
@@ -52,7 +52,7 @@ public class BirthdayToAgeUtil {
                 age = age - 1;
             }
         }
-        ageStr = String.valueOf(age) + "周岁";
+        ageStr = String.valueOf(age) + "岁";
         return ageStr;
     }
 
